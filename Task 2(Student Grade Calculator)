@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class Test 
+{
+   public static void main(String[] args) {
+    float eng,phy,chem,math,comp;
+    double total,avg_percentage;
+      Scanner scan=new Scanner(System.in);
+      System.out.println("Enter the mark of English subject:");
+      eng=scan.nextFloat();
+      System.out.println("Enter the mark of Physics subject:");
+      phy=scan.nextFloat();
+      System.out.println("Enter the mark of Chemistry subject:");
+      chem=scan.nextFloat();
+      System.out.println("Enter the mark of Maths subject:");
+      math=scan.nextFloat();
+      System.out.println("Enter the mark of Computer subject:");
+      comp=scan.nextFloat();
+      total=eng+phy+chem+math+comp;
+      avg_percentage=(total/5.0);
+      System.out.println("Total marks = " +total);
+      System.out.println("Average Persentage = " +avg_percentage);
+      if (avg_percentage>=80 && avg_percentage<=100) {
+         System.out.println("Grade : A");
+      } else if (avg_percentage<80 && avg_percentage>=70) {
+         System.out.println("Grade : B");
+      } else if (avg_percentage<70 && avg_percentage>= 60) {
+         System.out.println("Grade : C");
+      } else if (avg_percentage<60 && avg_percentage>=50) {
+         System.out.println("Grade : D");
+      } else {
+         System.out.println("Grade : E");
+      }
+
+   }
+}
